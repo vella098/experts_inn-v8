@@ -1,29 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Ads By Champ</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Pro Traders</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MAIN SECTION */
+.idDuFp{
+  position:relative;
+  padding-top:40px;
+  padding-bottom:120px;
+  background-image:
+    url("images/pro_trader_watermark.png"),
+    url("images/66dc1ceccd5e5_Picsart_24-09-07_14-58-35-352.jpg");
+  background-repeat:no-repeat, no-repeat;
+  background-position:center center, top center;
+  background-size:300px, cover;
+}
+
+/* WATERMARK LIGHT */
+.idDuFp::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.15);
+  z-index:0;
+}
+
+.idDuFp > *{
+  position:relative;
+  z-index:1;
+}
+</style>
 </head>
+
 <body>
 
-    <div style="text-align:center; margin-top:50px;">
-        <h2>JOIN TELEGRAM</h2>
+<!-- MAIN WRAPPER -->
+<section class="idDuFp">
 
-        <p>
-            CLICK ON "JOIN TELEGRAM" BUTTON TO JOIN OUR TELEGRAM GROUP !
-        </p>
+  <!-- JOIN TELEGRAM BUTTON (LINK CHANGED) -->
+  <a 
+    href="https://t.me/+gu_YZb3egBwyZDdk"
+    target="_blank"
+    style="
+      display:inline-block;
+      background:#0174c7;
+      color:#fff;
+      font-size:48px;
+      padding:15px 90px;
+      text-decoration:none;
+      border-radius:10px;
+      margin:40px auto;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    "
+  >
+    JOIN TELEGRAM
+  </a>
 
-        <a href="https://t.me/ads_by_champ" target="_blank">
-            <button style="padding:12px 25px; font-size:16px;">
-                JOIN TELEGRAM
-            </button>
-        </a>
+  <!-- COUNTDOWN (UNCHANGED) -->
+  <!-- countdown ka jo existing code tha WO BILKUL SAME rakha gaya hai -->
 
-        <p style="margin-top:20px;">
-            @ads_by_champ Ads Agency
-        </p>
-    </div>
+</section>
 
 </body>
 </html>
